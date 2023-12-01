@@ -7,22 +7,25 @@
     <title>Ruth Alemfanta - About me</title>
     <link rel="icon" href="../src/images/logo.png" type="image/jpng">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../src/css/styles.css">
+
 </head>
 
 <body>
     <header>
-        <img class="logo" src="../src/images/logo.png" alt="" height="100" width="100">
         <nav>
+        <img class="logo" src="../src/images/logo.png" alt="" height="100" width="100">
+
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="aboutme.html">About me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
-                <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
+                <li><a class="navs" href="home.html">Home</a></li>
+                <li><a class="active navs" href="aboutme.html">About me</a></li>
+                <li><a class="navs" href="portfolio.html">Portfolio</a></li>
+                <li><a class="navs" href="resume.html">Resume</a></li>
+                <li><a class="navs" href="contact.html">Contact</a></li>
+                <li><a  href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
+                <li><a  href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
                 <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
-                <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
+                <li><a  href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
 
             </ul>
         </nav>
@@ -31,134 +34,193 @@
     <main>
         
         <section class="aboutme-intro">
-            <h1>About me</h1>
+            
             <img id="about-image" src="../src/images/aboutme-image.jpg" alt="A picture of me"  title="A picture of me">
-            <p class="intro">Albert Einstein has had a profound impact on my life, igniting my curiosity and inspiring me to explore the wonders of the universe. His groundbreaking theories and revolutionary ideas have challenged my perception of reality and sparked a lifelong fascination with physics, the cosmos, and tech. He taught me the importance of bridging the gap between complex ideas and practical applications, which has guided me in translating intricate technical concepts into user-friendly solutions. He indeed shaped me as a person.</p>
+            <div class="about-paragraph">
+                <h1>About me</h1>
+                <p class="about-intro">Albert Einstein has had a profound impact on my life, igniting my curiosity and inspiring me to explore the wonders of the universe. His groundbreaking theories and revolutionary ideas have challenged my perception of reality and sparked a lifelong fascination with physics, the cosmos, and tech. He taught me the importance of bridging the gap between complex ideas and practical applications, which has guided me in translating intricate technical concepts into user-friendly solutions. He indeed shaped me as a person.</p>
+            </div>    
         </section>
         
-        <div class="aboutme-intro">
-            <q class="qoute">Computers are high-speed, accurate, and stupid; humans are incredibly slow, inaccurate, and brilliant; together they are powerful beyond imagination</q>
-            <p class="caption">-Albert Einstein(I think)</p>
+        <div class="aboutme-dit">
+
+            <div class="aboutme-qoute">
+                <q class="qoute">Computers are high-speed, accurate, and stupid; humans are incredibly slow, inaccurate, and brilliant; together they are powerful beyond imagination</q>
+                <p class="about-caption">-Albert Einstein(I think)</p>
+            </div>
+            
             <video src="../src/images/einstin'svideo.mp4"  width="500" height="281" controls muted autoplay>
                 
            </video><br>
-            <p class="aboutme">Imagine a young girl who played games and read blogs about instances of the world stumbling across this quote. It enlightened me that despite the incredible capabilities of computers, they lack the brilliance and creativity inherent in human beings. They reminded me that I possess a unique power—the power to think critically, to solve complex problems, and to envision innovative solutions. They inspired me to chase my intelligence and to recognize that my potential, when combined with the speed and accuracy of technology, can transcend limits and achieve greatness. That's when i fell in love with computers and their enviroment. They became a dear friend to me. Thus started my journey. </p>
+           
+           <div class="aboutme-qoute2">
+                <p class="qoute-description">Imagine a young girl who played games and read blogs about instances of the world stumbling across this quote. It enlightened me that despite the incredible capabilities of computers, they lack the brilliance and creativity inherent in human beings. They reminded me that I possess a unique power—the power to think critically, to solve complex problems, and to envision innovative solutions. They inspired me to chase my intelligence and to recognize that my potential, when combined with the speed and accuracy of technology, can transcend limits and achieve greatness. That's when i fell in love with computers and their enviroment. They became a dear friend to me. Thus started my journey. </p>
+            </div>
         </div>
 
-        <section class="hobbies">
+        <section class="hobbies-container">
             <h2>What I Like to Do</h2>
-            <h4>Other than obsess about computers</h4>
-            <figure>
-                <img class="hobbies" src="../src/images/chess.png" alt="chess" height="50" title="chess">
-                <figcaption>Chess</figcaption>
-            </figure>
+            <h4>Other than obsessing about computers</h4>
+             <div class="figures"> 
+                <div>
+                    <figure>
+                        <img class="hobbies" src="../src/images/chess.png" alt="chess" height="50" title="chess">
+                        <figcaption>Chess</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img class="hobbies" src="../src/images/bake.png" alt="bake" height="50" title="cooking">
+                        <figcaption>Cooking</figcaption>
+                    </figure>
+                </div>
+                <div>                    
+                <figure>
+                    <img class="hobbies" src="../src/images/travel.png" alt="travel" height="50" title="travel">
+                    <figcaption>Traveling</figcaption>
+                </figure>
+                </div>
 
-            <figure>
-                <img class="hobbies" src="../src/images/bake.png" alt="bake" height="50" title="cooking">
-                <figcaption>Cooking</figcaption>
-            </figure>
-            <figure>
-                <img class="hobbies" src="../src/images/travel.png" alt="travel" height="50" title="travel">
-                <figcaption>Traveling</figcaption>
-            </figure>
+                <div>
+                    <figure>
+                        <img class="hobbies" src="../src/images/photograph.png" alt="photography" height="50" title="photography">
+                        <figcaption>Photography</figcaption>
+                    </figure>
+                </div>
 
-            <figure>
-                <img class="hobbies" src="../src/images/photograph.png" alt="photography" height="50" title="photography">
-                <figcaption>Photography</figcaption>
-            </figure>
+                <div>
 
-            <figure>
-                <img class="hobbies" src="../src/images/game-console.png" alt="video games" height="50" title="vide games">
-                <figcaption>Video Games</figcaption>
-            </figure>
-            
-            <figure>
-                <img class="hobbies" src="../src/images/foreign-language.png" alt="learning new languages" height="50" title="learning new languages">
-                <figcaption>Learning new Languages</figcaption>
-            </figure>
-            
-            <figure>
-                <img class="hobbies" src="../src/images/reading-book.png" alt="books" height="50" title="reading book">
-                <figcaption>Books</figcaption>
-            </figure>
-            
-            <figure>
-                <img class="hobbies" src="../src/images/farming.png" alt="Gardening" height="50" title="reading books">
-                <figcaption>Gardening</figcaption>
-            </figure>
-            
-            <figure>
-                <img class="hobbies" src="../src/images/artist.png" alt="Painting" height="50" title="painting" >
-                <figcaption>Painting</figcaption>
-            </figure>
-            
-            <figure>
-                <img class="hobbies" src="../src/images/swimming-pool.png" alt="swimming" height="50" title="swimming">
-                <figcaption>Swimming</figcaption>
-            </figure>
+                    <figure>
+                        <img class="hobbies" src="../src/images/game-console.png" alt="video games" height="50" title="vide games">
+                        <figcaption>Video Games</figcaption>
+                    </figure>
+                </div>
+
+
+                <div>
+                    <figure>
+                        <img class="hobbies" src="../src/images/foreign-language.png" alt="learning new languages" height="50" title="learning new languages">
+                        <figcaption>Learning new Languages</figcaption>
+                    </figure>
+                </div>
+
+
+                <div>
+                    <figure>
+                        <img class="hobbies" src="../src/images/reading-book.png" alt="books" height="50" title="reading book">
+                        <figcaption>Books</figcaption>
+                    </figure>
+                </div>   
+
+                <div>
+                    <figure>
+                        <img class="hobbies" src="../src/images/farming.png" alt="Gardening" height="50" title="reading books">
+                        <figcaption>Gardening</figcaption>
+                    </figure>
+                </div>
+                
+               <div>
+                    <figure>
+                        <img class="hobbies" src="../src/images/artist.png" alt="Painting" height="50" title="painting" >
+                        <figcaption>Painting</figcaption>
+                    </figure>
+               </div>
+                
+               <div>
+                    <figure>
+                        <img class="hobbies" src="../src/images/swimming-pool.png" alt="swimming" height="50" title="swimming">
+                        <figcaption>Swimming</figcaption>
+                    </figure>
+               </div>
+            </div>   
         </section>
 
         <section class="minibio">
             <h2>Mini Bio</h2>
-            <p>Let me walk you through my life</p>
-            <h3>Life after 2002,</h3>
-            <p>I offically joined this world</p>
-            <h3>2010</h3>
-            <p>I got my first phone, the TECNO 1901, It was a momentous occasion, not just for me, but also for my friends. We were eager to witness the wonders this technological marvel had in store. I wasted no time in capturing my first photo.</p>
-            <h3>2012</h3>
-            <p>This year marked the beginning of my deep dive into the world of video games. It became a passion that consumed my days and nights as I embraced the challenges of conquering each level. To overcome these virtual obstacles, I found myself delving into the intricacies of computer manipulation. It was during this journey that I discovered a lifelong companion—Computers.</p>
-            <h3>2017</h3>
-            <p>I encountered my first computer freeze, a daunting moment of frustration. Determined, I turned to the Internet for a solution. With diligence and resourcefulness, I discovered a fix and successfully resolved the issue. A surge of pride washed over me as I reveled in my accomplishment.</p>
-            <h3>2020</h3>
-            <p>The infamous COVID-19 pandemic struck, forcing the world into a prolonged lockdown. In those isolated times, it felt like it was just me and my loyal laptop against the world. It became an opportunity to embark on new ventures. I delved into the realm of programming languages and web design, experimenting with different tools and techniques. </p>
-            <h3>2021</h3>
-            <p>I was blessed to be one of the students to join AAU. It opened a door for many learning opportunities and courses.</p>
-            <h3>2023</h3>
-            <p>Fast forward to today I joined the software engineering department of the university and im still current enrolled their pushing forward as a 3rd year student</p>
+            <p class="below">Let me walk you through my life</p>
+            <div class="bio-container">
+                <div class="bio">
+                    <h3>Life after 2002,</h3>
+                    <p>I offically joined this world</p>
+                </div>
+
+                <div class="bio">
+                    <h3>2010</h3>
+                    <p>I got my first phone, the TECNO 1901, It was a momentous occasion, not just for me, but also for my friends. We were eager to witness the wonders this technological marvel had in store. I wasted no time in capturing my first photo.</p>
+                
+                </div >
+                <div class="bio">
+                    <h3>2012</h3>
+                    <p>This year marked the beginning of my deep dive into the world of video games. It became a passion that consumed my days and nights as I embraced the challenges of conquering each level. To overcome these virtual obstacles, I found myself delving into the intricacies of computer manipulation. It was during this journey that I discovered a lifelong companion—Computers.</p>
+                </div>    
+                <div class="bio">  
+                    <h3>2017</h3>
+                    <p>I encountered my first computer freeze, a daunting moment of frustration. Determined, I turned to the Internet for a solution. With diligence and resourcefulness, I discovered a fix and successfully resolved the issue. A surge of pride washed over me as I reveled in my accomplishment.</p>
+                </div> 
+                <div class="bio">  
+                    <h3>2020</h3>
+                    <p>The infamous COVID-19 pandemic struck, forcing the world into a prolonged lockdown. In those isolated times, it felt like it was just me and my loyal laptop against the world. It became an opportunity to embark on new ventures. I delved into the realm of programming languages and web design, experimenting with different tools and techniques. </p>
+                </div>  
+                
+                <div class="bio">   
+                    <h3>2021</h3>
+                    <p>I was blessed to be one of the students to join AAU. It opened a door for many learning opportunities and courses.</p>
+                </div>   
+                <div class="bio">  
+                    <h3>2023</h3>
+                    <p>Fast forward to today I joined the software engineering department of the university and im still current enrolled their pushing forward as a 3rd year student</p>
+                </div>  
+            </div>   
         </section>
 
-        <section class="skills">
+        <section class="skil">
             <h2>My Expertice</h2>
-            <div class="skills">
-                <h3><img class="skill-logo" src="../src/images/tech.png" height="50" alt="Tech skills"> Tech</h3>
-                <ul>
-                    <li>Front-end Development</li>
-                    <li>App Development</li>
-                    <li>Back-end Development(a little)</li>
-                </ul>
-            </div>
+            <div class="skill">
+                
 
-            <div class="skills">
-                <h3><img class="skill-logo" src="../src/images/language-skills.png" height="50" alt="language-skill">Languages</h3>
-                <ul>
-                    <li>Amharic</li>
-                    <li>English</li>
-                    <li>Arabic</li>
-                    <li>Spanish</li>
-                </ul>
+                <div class="skills">
+                    <h3><img class="skill-logo" src="../src/images/tech.png" height="50" alt="Tech skills"> Tech</h3>
+                    <ul>
+                        <li>Front-end Development</li>
+                        <li>App Development</li>
+                        <li>Back-end Development(a little)</li>
+                    </ul>
+                </div>
 
-            </div>
-            
-            <div class="skills">
-                <h3><img class="skill-logo" src="../src/images/integrity.png" height="50" alt="Miscellaneous skills">Miscellaneous</h3>
-                <ul>
-                    <li>Photography</li>
-                    <li>Painting</li>
-                    <li>Cooking</li>
-                </ul>
+                <div class="skills">
+                    <h3><img class="skill-logo" src="../src/images/language-skills.png" height="50" alt="language-skill">Languages</h3>
+                    <ul>
+                        <li>Amharic</li>
+                        <li>English</li>
+                        <li>Arabic</li>
+                        <li>Spanish</li>
+                    </ul>
+
+                </div>
+                
+                <div class="skills">
+                    <h3><img class="skill-logo" src="../src/images/integrity.png" height="50" alt="Miscellaneous skills">Miscellaneous</h3>
+                    <ul>
+                        <li>Photography</li>
+                        <li>Painting</li>
+                        <li>Cooking</li>
+                    </ul>
+                </div>
             </div>
         </section>
         
 
         <section class="table">
             <h2>More About me</h2>
-            <table>
+            <table class="facts">
                 <tr>
                     <th colspan="2">Bonus Fun Facts</th>
                 </tr>
                 <tr>
                     <td>Favorite song</td>
-                    <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0AZTpwagcDe4nH0mPcnYhS?utm_source=generator&theme=0"  height="352"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+                    <td> <div class="spotify">
+                        <iframe src="https://open.spotify.com/embed/track/0AZTpwagcDe4nH0mPcnYhS?utm_source=generator&theme=0"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                      </div></td>
                 </tr>
                 <tr>
                     <td>Favorite movie</td>
@@ -197,23 +259,32 @@
     </main>
 
     <footer>
-        <h2> <a href="contact.html" target="_blank">Let's Link</a></h2>
-        <h2>Socials</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
-            <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
-            <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
-            <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
-        </ul>
-        <h2>Address</h2>
-        <address>
-            <ul>
-                <li><a href="mailto:ruthalemfanta@gmail.com" class="fa fa-envelope" target="_blank">ruthalemfanta@gmail.com</a></li>
-                <li><a href="tel:+251922273737" class="fa fa-phone"> +251 922273737</a></li>
-                <li><a href="2QG7+HXF,Palace,MenelikIIAve,AddisAbaba" class="fa fa-home">4 Kilo, Addis Ababa</a></li>
-            </ul>
-        </address>
-        
+        <div class="letslink">
+            <h2> <a class="contact1" href="contact.html" target="_blank">Let's Link</a></h2>
+        </div>
+
+        <div class="other">
+            <div class="socials">
+                <h2>Socials</h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
+                    <li><a href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
+                    <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
+                    <li><a href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
+                </ul>
+            </div>
+
+            <div class="address">
+            <h2>Address</h2>
+                <address>
+                    <ul>
+                        <li><a href="mailto:ruthalemfanta@gmail.com" class="fa fa-envelope" target="_blank">ruthalemfanta@gmail.com</a></li>
+                        <li><a href="tel:+251922273737" class="fa fa-phone"> +251 922273737</a></li>
+                        <li><a href="2QG7+HXF,Palace,MenelikIIAve,AddisAbaba" class="fa fa-home">4 Kilo, Addis Ababa</a></li>
+                    </ul>
+                </address>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
