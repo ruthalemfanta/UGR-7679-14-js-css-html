@@ -9,39 +9,42 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../src/css/styles.css">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <title>Ruth Alemfanta - Home</title>
 </head>
 <body>
-    <header>
-        <nav>
-            
-            
-                <img class="logo" src="../src/images/logo.png" alt="" height="100" width="100">
-                
+    <header class="header">
+        <img class="header__logo" src="../src/images/logo.png" alt="" height="100" width="100">      
+        <nav class="header__navbar">
             <ul>
-                <li><a class="active navs" href="home.html">Home</a></li>
-                <li><a class="navs" href="aboutme.html">About me</a></li>
-                <li><a class="navs" href="portfolio.html">Portfolio</a></li>
-                <li><a class="navs" href="resume.html">Resume</a></li>
-                <li><a class="navs" href="contact.html">Contact</a></li>
-                <li><a  href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a></li>
-                <li><a  href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a></li>
-                <li><a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a></li>
-                <li><a  href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a></li>
-
-            </ul>
+                <li><a class="header__navbar-link header__navbar-link-active" href="home.html">Home</a></li>
+                <li><a class="header__navbar-link" href="aboutme.html">About me</a></li>
+                <li><a class="header__navbar-link" href="portfolio.html">Portfolio</a></li>
+                <li><a class="header__navbar-link" href="resume.html">Resume</a></li>
+                <li><a class="header__navbar-link" href="contact.html">Contact</a></li>
+            </ul> 
         </nav>
+
+        <div class="socials-header">
+                <a  href="https://www.linkedin.com/in/r-a-174696263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin" target="_blank"></a>
+                <a  href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a>
+                <a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a>
+                <a  href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a>
+                <a href="#" class="bx bx-menu" id="menu-icon"></a>
+        </div>
+
     </header>
-    <main>
+    <main class="home-main">
         <section class="home">
-            <div class="intro">
-                <h3>Hey there, im</h3>
-                <h1>RUTH ALEMFANTA</h1>
-                <h3>Get to know me</h3>
-                <p>I'm a software engineering student at Addis Ababa University, who has been interacting with computers for almost a lifetime and an enthusiast of our fellow brainies. I'm currently on my path of getting to know them more. Powered by Figma, vs code and coffee, I've also helped people turn their visions into digital collectibles.</p>
+            <div class="home__intro">
+                <h3 class="home__intro-title">Hey there, im</h3>
+                <h1 class="home__intro-name">RUTH ALEMFANTA</h1>
+                <h3 class="home__intro-subtitle">Get to know me</h3>
+                <p class="home__intro-description">I'm a software engineering student at Addis Ababa University, who has been interacting with computers for almost a lifetime and an enthusiast of our fellow brainies. I'm currently on my path of getting to know them more. Powered by Figma, vs code and coffee, I've also helped people turn their visions into digital collectibles.</p>
             </div>
-            <div class="homep">
-                <img class="home-photo" src="../src/images/home-image.png" alt="Ruth Alemfanta" >
+            <div class="home__photo-section">
+                <img class="home__photo" src="../src/images/home-image.png" alt="Ruth Alemfanta" >
             </div>
         </section>
 
@@ -52,7 +55,7 @@
             </div>
                 
             
-                <video src="../src/images/einstin'svideo.mp4"  width="500" height="281" controls muted autoplay>
+                <video class="aboutme-dits__video" src="../src/images/einstin'svideo.mp4"  width="500" height="281" controls muted autoplay>
                 </video><br>
             
             <div class="aboutme-dit">
@@ -65,25 +68,25 @@
 
         <section class="home-portfolio">
 
-            <h2>What I can Do</h2>
-            <h4>To some extent</h4>
+            <h2 class="home-portfolio__title">What I can Do</h2>
+            <h4 class="home-portfolio__subtitle">To some extent</h4>
             <div class="myworks-container">
                 <section class="por-works-webdev">
-                    <h3> <i class="fa fa-code" aria-hidden="true"></i> Web Development</h3>
-                    <p>I've been curious about web pages and how they worked since I intracted with one. It was in 11th grade when i first developed them, as a graded assignment. I've been experimenting with their making ever since. </p>
+                    <h3 class="por-works__title"> <i class="fa fa-code" aria-hidden="true"></i> Web Development</h3>
+                    <p class="por-works_description">I've been curious about web pages and how they worked since I intracted with one. It was in 11th grade when i first developed them, as a graded assignment. I've been experimenting with their making ever since. </p>
                 </section>
                 <section class="por-works-app">
-                    <h3><i class="fa fa-apple" aria-hidden="true"></i> Applications</h3>
-                    <p>As a beginner in the world of app development, I possess a growing skill set and a strong passion for creating innovative applications. While I am at the early stages of my journey, my dedication and eagerness to learn allow me to approach each project with enthusiasm and commitment to continuous improvement. </p>
+                    <h3 class="por-works__title"><i class="fa fa-apple" aria-hidden="true"></i> Applications</h3>
+                    <p class="por-works_description">As a beginner in the world of app development, I possess a growing skill set and a strong passion for creating innovative applications. While I am at the early stages of my journey, my dedication and eagerness to learn allow me to approach each project with enthusiasm and commitment to continuous improvement. </p>
                 </section>
             </div >
             
 
             <section class="webs">
-                <img class="websites" src="../src/images/neaty.png" alt="Neaty website" height="100"  title="Website I made for Neaty">
-                <img class="websites" src="../src/images/matthew.png" alt="Matthew Perry tribute page" height="100"  title="Website I made for Matthew Perry tribute."> 
-                <img class="websites" src="../src/images/p2.png" alt="second page of the tribute" height="100" title="second page">
-                <img class="websites" src="../src/images/midnight.png" alt="Midnight" height="100" title="Website I made for Midnight"> 
+                <img class="webs__image" src="../src/images/neaty.png" alt="Neaty website" height="100"  title="Website I made for Neaty">
+                <img class="webs__image" src="../src/images/matthew.png" alt="Matthew Perry tribute page" height="100"  title="Website I made for Matthew Perry tribute."> 
+                <img class="webs__image" src="../src/images/p2.png" alt="second page of the tribute" height="100" title="second page">
+                <img class="webs__image" src="../src/images/midnight.png" alt="Midnight" height="100" title="Website I made for Midnight"> 
             </section>
 
 
@@ -102,7 +105,7 @@
     </main>
     <footer>
         <div class="letslink">
-            <h2> <a class="contact1" href="contact.html" target="_blank">Let's Link</a></h2>
+            <h2> <a class="letslink__contact" href="contact.html" target="_blank">Let's Link</a></h2>
         </div>
 
         <div class="other">
@@ -128,5 +131,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>
