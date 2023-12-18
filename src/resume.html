@@ -30,8 +30,8 @@
                 <a  href="https://instagram.com/____ruee____?igshid=YTQwZjQ0NmI0OA==" class="fa fa-instagram" target="_blank"></a>
                 <a href="https://x.com/fauxroot?s=35" class="fa fa-twitter" target="_blank"></a>
                 <a  href="https://www.snapchat.com/add/fauxroot?share_id=urwEJGjHg7E&locale=en-US" class="fa fa-snapchat" target="_blank"></a>
-                <a href="#" class="bx bx-menu" id="menu-icon"></a>
         </div>
+        <a href="#" class="bx bx-menu" id="menu-icon"></a>
 
     </header>
 
@@ -41,7 +41,7 @@
         </section>
 
        <div class="resume-content">
-        <section class="main">
+        <section class="resume-content-main">
             <div class="workexp">
                 <h2>Work Experience</h2>
                 <p class="workexp-title"> 2018 - 2017 Summer School for primary Students</p>
@@ -114,26 +114,28 @@
         </section>
 
         <aside>
-
-            <h1>Testimonials</h1>
-            <div class="friends">
-                <p>Friends and family</p>
-                <ul>
-                    <li>"Hard, working and proactive"</li> 
-                    <li>"Very serious when it comes to work"</li> 
-                    <li>"Very friendly"</li> 
-                </ul>
-            </div>
-
-
-            <div class="customers"></div>
-                <p>Customers</p>
-                <ul>
-                    <li>"Higly satisfied with what I got. "</li>
-                    <li>"Listens very well to our requirments"</li>
-                </ul>
+            <a href="#" class="bx bx-menu" id="aside-menu-icon"></a>
+            <button id="aside_toggle" onclick="toggleTestimonials()">|</button>
+            <div class="aside" id="aside_hidden">
+                <h1>Testimonials</h1>
+                <div class="friends">
+                    <p>Friends and family</p>
+                    <ul>
+                        <li>"Hardworking and proactive"</li> 
+                        <li>"Very serious when it comes to work"</li> 
+                        <li>"Very friendly"</li> 
+                    </ul>
+                </div>
+                <div class="customers">
+                    <p>Customers</p>
+                    <ul>
+                        <li>"Highly satisfied with what I got."</li>
+                        <li>"Listens very well to our requirements"</li>
+                    </ul>
+                </div>
             </div>
         </aside>
+
        </div>
 
         <section class="credentials">
@@ -144,10 +146,13 @@
                 <a href="https://www.facebook.com/p/Bahir-Dar-Academy-100075447537566/" target="_blank"><img src="../src/images/BDA.jpeg" alt="BDA logo"></a>
                 <a href="https://www.coursera.org/" target="_blank"><img src="../src/images/courseralogo.png" alt="coursera logo"></a>
                 <a href="https://www.edx.org/"><img src="../src/images/edx.png" alt="Edx logo"></a>
+                <button id="certificates__toggle" onclick="hideShow()">more>></button>
             </div>
         </section>
 
-        <section class="certificates-resume">
+        
+
+        <section class="certificates-resume" id="certificates-resume">
             <h2>Certificates</h2>
             <div class="certifacte-container">
                 <img class="certificates" src="../src/images/coursera.png" alt="coursera" height="100">
@@ -155,7 +160,6 @@
                 <img class="certificates" src="../src/images/it.png" alt="IT" height="100">
                 <img class="certificates" src="../src/images/cisco.png" alt="Cisco" height="100">
             </div>
-
         </section>
     </main>
 
@@ -187,6 +191,8 @@
             </div>
         </div>
     </footer>
+    <script src="../src/Js/script.js"></script>
+
     
 </body>
 </html>

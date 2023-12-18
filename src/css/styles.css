@@ -1,8 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * { 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:poppins , Arial, Helvetica, sans-serif;
 }
 
 .body {
@@ -20,9 +23,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 6%;
+    padding: 2px 6%;
     transition: all .50s ease;
     background-color: #FFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
    
 }
 
@@ -95,7 +99,7 @@ nav ul li {
 main { 
     margin-top: 140px;
     width: 100%;
-    height: 100%; /* Adjust this value to match the height of your fixed header */
+    height: 100%;
   }
 /* home ..........................................................................................*/
 .home{
@@ -326,14 +330,13 @@ main{
 
 #about-image{
     order: 1;
-    flex: 50%;
-    max-width: fit-content;
+    flex: 55%;
 }
 
 .about-side{
     margin-left: 4%;
     order: 2;
-    flex: 50%;
+    flex: 45%;
 }
 
 .about-side .qoute-description {
@@ -382,7 +385,8 @@ main .aboutme-dits {
     padding: 0 8%;
 }
 
-.qoute {
+.qoute{
+    font-size: 1.2em;
     font-weight: 550;
 }
 
@@ -465,7 +469,7 @@ video {
 }
 
 .minibio__description{
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: left;
     padding: 5px 0 10px 10px;
     font-weight: bold;
@@ -480,7 +484,7 @@ video {
 }
 
 .minibio__item-description {
-    font-size: 27px;
+    font-size: 1.5em;
     text-align: left;
     padding: 5px 10px 20px 10px;
 
@@ -489,20 +493,47 @@ video {
 .minibio-container {
     display: flex;
     overflow-x: scroll;
-    scroll-snap-type:x mandatory;
     align-items: baseline;
     padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
-
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
 }
+
+.minibio-container::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .minibio-container::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  .minibio-container::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .minibio-container::-webkit-scrollbar-thumb:hover {
+    background-color: #ccc;
+  }
 
 .minibio__item{
     flex:0 0 auto;
     width: 100%;
     scroll-snap-align: start;
-    scrollbar-color: #3b287e;
-    
+}
+
+.angle-left , .angle-right {
+    background-color: #00000000;
+    margin-top: 20px;
+    padding: 20px;
+    color: #FFF;
+    font-size: 4em;
 }
 
 .skills {
@@ -601,7 +632,7 @@ video {
     text-align: center;
     display: flex;
     justify-content: center;
-    margin: 10% 0;
+    margin: -2% 0 10% 0;
 }
 
 .portfolio-main > .myworks-container{
@@ -657,6 +688,7 @@ video {
     border-bottom:#3b287e 2px groove;
     padding-bottom: 15px;
 
+
 }
 .por-works-app{
     border-bottom:#3b287e 2px groove;
@@ -677,20 +709,37 @@ video {
     padding: 12px;
 }
 
+.myworks-title-subtitle{
+    font-size: 2em;
+    margin: 5px 0 5px 0;
+}
+
 .myworks {
+    text-align:left ;
     padding: 20px 20px;
     margin-top: 10%;
     color:#FFF;
     background-color: #000000;
 }
 
-.webdev h2 {
-    font-size: 2em;
-    margin: 5px 0 5px 0;
-}
-
 .myworks > div {
     margin: 10px 10px 0 10px;
+}
+
+
+.slider-container {
+  display: flex;
+  align-items: center;
+}
+
+.slider-icon {
+  background-color: #00000000;
+  font-size: 3em;  
+  cursor: pointer;
+}
+
+.slider-content {
+    white-space: nowrap;
 }
 
 .webdev{
@@ -698,12 +747,8 @@ video {
     justify-content:baseline;
     border:1px solid black;
     display: flex;
-    overflow-x: auto;
+    overflow:hidden;
     margin-bottom: 0px;
-}
-
-.myworks h2 {
-    font-size: 3em;    
 }
 
 .myworks__webdev-websites , .myworks__applications-apps,  .myworks__photography-photos , .myworks__cooking-foods {
@@ -715,19 +760,19 @@ video {
 .applications{
     border:1px solid black;
     display: flex;
-    overflow-x: auto;
+    overflow:hidden ;
 }
 
 .photography {
     border: 1px solid black;
     display: flex;
-    overflow-x: auto;
+    overflow: hidden;
 }
 
 .cooking {
     border: 1px solid black;
     display: flex;
-    overflow-x: auto;
+    overflow: hidden;
 }
 /* Resume .............................................................................................*/
 .resume-image {
@@ -746,7 +791,7 @@ video {
     text-transform: uppercase;
 }
 
-.main{
+.resume-content-main{
     font-size: larger;
     text-align: left;
     margin: 10px;
@@ -754,11 +799,11 @@ video {
     flex-direction: column;
 }
 
-.main > div {
+.resume-content-main > div {
     padding: 10px;
 }
 
-.main div > h2 {
+.resume-content-main div > h2 {
     font-size:1.7em;
     padding-bottom: 10px ;
 }
@@ -777,12 +822,12 @@ video {
      font-weight: 700;
 }
 
-.main ul li {
+.resume-content-main ul li {
     margin-left: 15px;
     padding: 5px;
 }
 
-aside {
+.aside {
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -792,6 +837,8 @@ aside {
     border-radius: 12px;
     padding: 15px;
     width: fit-content;
+    padding: 30px;
+    height: 300px;
 }
 
 aside  ul {
@@ -837,6 +884,30 @@ aside  p {
     padding: 15px;
 
 }
+#certificates__toggle {
+    font-size: 16px;
+    flex: 100%;
+    text-align: right;
+    border-style: none ;
+    background-color: #FFF;
+    align-items: baseline;
+}
+
+.certificates-resume {
+    display: none;
+}
+.resume-content{
+    display: flex;
+}
+
+
+#aside-menu-icon {
+    cursor: pointer;
+    display: none;
+    background-color: black;
+    color: #FFF;
+    font-size: 1.4em;
+}
 /* contacts ......................................................................................*/
 .contacts-image {
     text-align: center;
@@ -850,16 +921,10 @@ aside  p {
     max-width: 500px; 
     border-radius: 12px;
 }
-
-.contacts-image h1 {
+.letslink-contact {
     text-align: center;
     margin-top: 10px;
-    font-size: 3em;
-}
-
-
-.letslink-contact {
-    font-size: calc( 1em + 30vmin );
+    font-size: 7em;
     font-weight: 900;
     color: #5b47a4;
     
@@ -992,7 +1057,28 @@ textarea:focus {
     text-align: center;
     background-color: #1c0930;
 }
-
+#aside_toggle{
+    display: none;
+}
+.extra_socials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+.contact_aside_title{
+    margin-top: 100px;
+    color:#6b3e99;
+    font-weight: 700;
+    font-size: 4em;
+    text-align: center;
+}
+.extra_socials i {
+    padding: 10px;
+    background-color:#6352a1;
+    color: yellow;
+    font-size: 8em;
+}
 @media (max-width: 1280px) {
     header {
         padding: 14px 2%;
@@ -1033,10 +1119,34 @@ textarea:focus {
     .header__navbar.open {
         right: 2%;
     }
+    .aside {
+        margin-top: 150px;
+        display: none;
+        height: fit-content;
+    }
 
+    #aside_toggle {
+        position:absolute;
+        right: 0;
+        display: block;
+        background-color: #000000;
+        padding: 20px;
+        color: white;
+        font-size: 4em;
+    }
+    #side_toggle:hover{
+        background-color: #000000bf;
+    }
+    .extra_socials i{
+        font-size: 7em;
+        margin: 10px;
+    }
 }
 
 @media (max-width: 480px) {
+    .socials-header{
+        display: none;
+    }
     .home{
         flex-direction: column;
     }
@@ -1045,9 +1155,7 @@ textarea:focus {
         order: 1;
     }
 
-    .home__intro
-
-    {
+    .home__intro{
         order: 2;
     }
 
@@ -1064,7 +1172,9 @@ textarea:focus {
     {
         flex-direction: column;
     }
-
+    .portfolio-image h1{
+        padding: 180px 0;
+    }
    .home-portfolio {
     flex-direction: column;
    }
@@ -1191,11 +1301,15 @@ textarea:focus {
     .myworks h2 {
         font-size: 2em;
         margin: 5px 0 5px 0;
-    }
+    } 
          
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+    .socials-header{
+        display: none;
+    }
+
     #menu-icon {
         display: block;
     }
@@ -1205,7 +1319,7 @@ textarea:focus {
         top: 100%;
         right: -100%;
         width: 270px;
-        height: 45vh;
+        height: fit-content;
         background-color:#09ADAE;
         display: flex;
         flex-direction: column;
@@ -1317,6 +1431,10 @@ textarea:focus {
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
+    .socials-header{
+        display: none;
+    }
+
     .header__navbar a{ 
         margin: 5px 0;
         padding:0px 5px;
@@ -1402,9 +1520,14 @@ textarea:focus {
         font-size: 25px;
     }
     
-    minibio__item{
+   .minibio__item{
         width: 100%;        
     }
+    .aside{
+        display: block;
+    }
+
+   
 }
 
 @media (min-width: 1025px) {
@@ -1425,6 +1548,23 @@ textarea:focus {
         padding: 0 8%;
     }
 
+    .home-portfolio .myworks-container{
+        flex: 60%;
+        display: flex;
+    }
+    .webs {
+        flex:20%;
+    }
+
+    .home-portfolio .por-works-webdev , .home-portfolio .por-works-app {
+        border-bottom:none ;
+    }
+
+    .home-portfolio .por-works-webdev {
+        border-right: #3b287e 2px groove ;
+        padding-right: 20px;
+    }
+
     .about-starter {
     display: flex;
     }
@@ -1436,8 +1576,8 @@ textarea:focus {
      .aboutme-qoute2 p{
         font-size: 1.5vw ;
     }
-    
-    .main , .credentials , .certificates-resume {
+ 
+    .resume-content-main , .credentials , .certificates-resume {
         padding: 8%;
         font-size: x-large;
     }
@@ -1467,15 +1607,7 @@ textarea:focus {
         width: 30vh;
         height: auto;
     }
-    .resume-content{
-        display: flex;
-    }
-
-    aside {
-        padding: 30px;
-        height: 300px;
-    }
-    
+  
     .schools{
         display: flex;
         margin: 10px;
@@ -1493,10 +1625,10 @@ textarea:focus {
         width: 30vh;
         height: auto;
     }
-    
-    .resume-content{
-        display: flex;
+    .aside{
+        display: block;
     }
+
 }
 
 
